@@ -1,0 +1,162 @@
+/* Import Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #3e7afa;
+}
+.wrapper {
+  max-width: 405px;
+  margin: 135px auto;
+  background: white;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  padding: 28px 0;
+}
+.task-input {
+  height: 52px;
+  padding: 0 25px;
+  position: relative;
+}
+.task-input i {
+  position: absolute;
+  top: 50%;
+  transform: translate(17px, -50%);
+  -webkit-transform: translate(17px, -50%);
+  -moz-transform: translate(17px, -50%);
+  -ms-transform: translate(17px, -50%);
+  -o-transform: translate(17px, -50%);
+  font-size: 1.5em;
+  color: #bfbfbf;
+}
+.task-input input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border: 1px solid #999;
+  padding: 0 20px 0 53px;
+}
+.task-input input::placeholder {
+  color: #bfbfbf;
+}
+.controls,
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.controls {
+  padding: 18px 25px;
+  border-bottom: 1px solid #ccc;
+}
+.filters span {
+  margin: 0 8px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.filters span:first-child {
+  margin-left: 0;
+}
+.filters span.active {
+  color: #3e7afa;
+}
+.controls .clear-btn {
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding: 7px 13px;
+  background: #3e7afa;
+}
+.task-box {
+  margin: 20px 25px;
+}
+.task-box .task {
+  list-style: none;
+  font-size: 17px;
+  margin-bottom: 18px;
+  padding: 16px;
+}
+.task-box .task:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.task label {
+  display: flex;
+}
+.task label p.checked {
+  text-decoration: line-through;
+}
+.task label input {
+  margin-top: 6px;
+  margin-right: 12px;
+}
+.task .settings {
+  cursor: pointer;
+  position: relative;
+}
+.settings .task-menu {
+  position: absolute;
+  z-index: 2;
+  right: -5px;
+  bottom: -65px;
+  padding: 5px 0;
+  border-radius: 5px;
+  transform: scale(0);
+  background: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+  transform-origin: top right;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  -webkit-transition: transform 0.2s ease;
+  -moz-transition: transform 0.2s ease;
+  -ms-transition: transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+}
+.settings .task-menu.show {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+.task-menu li {
+  height: 25px;
+  font-size: 16px;
+  padding: 17px 15px;
+  margin-bottom: 2px;
+  justify-content: flex-start;
+}
+.task-menu li:last-child {
+  margin-bottom: 0;
+}
+.task-menu li:hover {
+  background: #f5f5f5;
+}
